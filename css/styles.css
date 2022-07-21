@@ -1,0 +1,50 @@
+body,
+html {
+  height: 100%;
+}
+
+/*.pol {
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+}*/
+
+body {
+  /*font-family: "Montserrat";*/
+  margin: 0;
+  background-image: url("../img/F100022197_3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+body .pol {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  clip-path: polygon(0 0, 35% 0, 65% 100%, 0 100%);
+}
+@media (min-width: 992px) {
+  body .pol {
+    clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
+  }
+}
+
+main {
+  padding-top: 4%;
+}
+
+.caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+}
+
+.texto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
